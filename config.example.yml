@@ -7,7 +7,7 @@ server:
 
   ssl:
     enabled: false # if https should be enabled
-    redirecttohttps: true # redirect to https if site is accessed by http
+    redirecttohttps: false # redirect to https if site is accessed by http
     listenaddr: "" # the address to bind on, leave empty to bind on all addresses
     port: 443 # the https port
     certfile: # the cert file (leave empty when using letsencrypt)
@@ -34,8 +34,8 @@ database: # for database see (configure database section)
   connection: data/gotify.db
 
 defaultuser: # on database creation, gotify creates an admin user
-  name: admin # the username of the default user
-  pass: admin # the password of the default user
+  name: hudhand # the username of the default user
+  pass: Horhe123 # the password of the default user
 passstrength: 10 # the bcrypt password strength (higher = better but also slower)
 uploadedimagesdir: data/images # the directory for storing uploaded images
 pluginsdir: data/plugins # the directory where plugin resides
